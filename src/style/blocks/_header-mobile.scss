@@ -1,0 +1,43 @@
+.mobile {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & div:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+
+  &__logo {
+    & img {
+      width: 100%;
+    }
+    width: 130px;
+    height: 27px;
+  }
+}
+
+@media (min-width: 375px) {
+  .mobile {
+    &__menu {
+      & div:not(:last-of-type) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .mobile {
+    padding: 35px 0;
+    &__logo {
+      width: 190px;
+      height: 40px;
+    }
+  }
+}
