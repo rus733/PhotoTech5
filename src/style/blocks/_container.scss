@@ -1,4 +1,29 @@
-.container {
-  // background: #999;
-  // border: 1px solid black;
+// .container {
+//   // background: #999;
+//   // border: 1px solid black;
+// }
+@media (max-width: 1230px) {
+  .container {
+    max-width: 1022px;
+  }
+}
+@media (max-width: 1022px) {
+  .container {
+    max-width: 798px;
+  }
+}
+@media (max-width: 798px) {
+  .container {
+    max-width: 606px;
+  }
+}
+@media (max-width: 606px) {
+  .container {
+    max-width: 405px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 290px;
+  }
 }

@@ -1,8 +1,9 @@
 @import './libs/normalize';
 @import './fonts/fonts';
 @import './blocks/header-mobile';
-// @import './blocks/container';
-// @import './blocks/header';
+@import './blocks/container';
+@import './blocks/line';
+@import './blocks/header';
 // @import './blocks/slider-top';
 // @import './blocks/sets';
 // @import './blocks/delivery-food';
@@ -11,3 +12,4 @@
 // @import './blocks/footer';
 // @import './blocks/button';
 // @import './blocks/title';
+@import './variables/variables';
