@@ -1,0 +1,22 @@
+.header {
+  border-bottom: 1px solid $pt-dark-txt-grey333;
+  padding-top: 7px;
+  &-bg-top {
+    background: $pt-light-grey-bg;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__logo {
+    display: block;
+    width: 180px;
+  }
+}
+
+@media (max-width: 798px) {
+  .header {
+    &__logo {
+      width: 140px;
+    }
+  }
+}
