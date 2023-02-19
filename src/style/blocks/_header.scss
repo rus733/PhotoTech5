@@ -4,12 +4,64 @@
   &-bg-top {
     background: $pt-light-grey-bg;
   }
-  &__wrapper {
+  &-top {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    &__right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    &__city a {
+      text-decoration: none;
+      color: $link-city;
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
   }
   &__logo {
     display: block;
     width: 180px;
+  }
+  &-nav {
+    display: flex;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    &__link {
+      font-size: 12px;
+      line-height: 20px;
+      /* identical to box height, or 162% */
+      text-decoration-line: underline;
+      color: #666666;
+      &:hover {
+        text-decoration-line: none;
+        color: $pt-orange;
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & a {
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration-line: none;
+        color: $pt-orange;
+      }
+    }
   }
 }
 
