@@ -27,18 +27,46 @@
                     <a class="header-nav__link" href="#">Партнерам и заказчикам</a>
                   </li>
                   <li class="header-nav__item">
-                    <a class="header-nav__link" href="#"></a>
+                    <a class="header-nav__link" href="#">Контакты</a>
+                    <!--  -->
                   </li>
                 </ul>
               </nav>
             </div>
             <div class="header-top__right">
               <div class="header-top__city">
-                <span>Ваш город</span>
-                <a href="#">Москва</a>
+                <ul class="city-menu">
+                  <li class="city-menu__item">
+                    <div class="city-menu__select">
+                      <span>Ваш город:</span>
+                      <a href="#">Москва</a>
+                    </div>
+                  </li>
+                </ul>
               </div>
-              <div class="header-top__phones"></div>
-              <div class="header-top__country"></div>
+              <div class="header-top__phones">
+                <div>
+                  <img src="img/header/call.svg" alt="call" />
+                  <a href="tel:84957812342">8 (495) 781-23-42</a>
+                </div>
+                <div>
+                  <img src="img/header/call.svg" alt="call" />
+                  <a href="tel:88005500101">8 (800) 550-01-01</a>
+                </div>
+              </div>
+              <div class="header-top__free">Бесплатно по России</div>
+              <div class="header-top__local">
+                <div class="lang-change">
+                  <a href="#" style="display: flex !important; align-items: center"
+                    ><img src="img/header/local/flag-ru.svg" alt="flag" />
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M7.41 8.58 12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42Z"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
               <div class="header-top__button">
                 <button class="button-order button">заявка на расчет</button>
               </div>
@@ -51,25 +79,35 @@
           <a href="#" class="header__logo">
             <img src="img/logo.svg" alt="logo" />
           </a>
-          <nav class="header-nav">
-            <ul class="header-nav__list">
-              <li class="header-nav__item">
-                <a class="header-nav__link" href="#">О компании</a>
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">О компании</a>
               </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link" href="#">Противопожарные конструкции</a>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Противопожарные конструкции</a>
               </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link" href="#">Защитное остекление</a>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Защитное остекление</a>
               </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link" href="#">Специальные стекла</a>
-              </li>
-              <li class="header-nav__item">
-                <a class="header-nav__link" href="#"></a>
+              <li class="header-menu__item">
+                <a class="header-menu__link" href="#">Специальные стекла</a>
               </li>
             </ul>
           </nav>
+          <div class="header-mobile">
+            <div class="header-mobile__menu">
+              <div class="header-mobile__call">
+                <a href="#"><img src="img/header/call.svg" alt="call" /></a>
+              </div>
+              <div class="header-mobile__serch">
+                <a href="#"><img src="img/header/search.svg" alt="search" /></a>
+              </div>
+              <div class="header-mobile__burger">
+                <a href="#"><img src="img/header/burger.svg" alt="burger menu" /></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
