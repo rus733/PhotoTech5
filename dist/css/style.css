@@ -842,9 +842,13 @@ img {
 }
 @media (max-width: 798px) {
   .calc__wrap {
+    width: 75%;
     margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
+  }
+}
+@media (max-width: 606px) {
+  .calc__wrap {
+    width: 100%;
   }
 }
 .calc__data {
@@ -858,7 +862,7 @@ img {
 @media (max-width: 798px) {
   .calc__data {
     width: 90%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px 0;
   }
 }
 .calc__info img {
