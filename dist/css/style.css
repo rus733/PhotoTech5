@@ -826,10 +826,50 @@ img {
   align-items: center;
   background: #f1f2f3;
 }
+@media (max-width: 798px) {
+  .calc {
+    flex-direction: column;
+  }
+}
+.calc__wrap {
+  display: flex;
+  justify-content: start;
+}
+@media (max-width: 1230px) {
+  .calc__wrap {
+    flex-direction: column;
+  }
+}
+@media (max-width: 798px) {
+  .calc__wrap {
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.calc__data {
+  margin-right: 40px;
+}
+@media (max-width: 1230px) {
+  .calc__data {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 798px) {
+  .calc__data {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+}
 .calc__info img {
   display: inline-block;
   align-items: center;
   width: 20px;
+  margin-right: 12px;
+}
+.calc__info a {
+  display: flex;
+  align-items: center;
 }
 .calc__send {
   display: inline-block;
