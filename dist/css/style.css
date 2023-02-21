@@ -818,6 +818,11 @@ img {
   line-height: 40px;
   /* identical to box height, or 133% */
 }
+@media (max-width: 798px) {
+  .title {
+    font-size: 25px;
+  }
+}
 
 .calc {
   padding: 20px;
@@ -853,10 +858,16 @@ img {
 }
 .calc__data {
   margin-right: 40px;
+  font-size: 14px;
 }
 @media (max-width: 1230px) {
   .calc__data {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 1022px) {
+  .calc__data {
+    font-size: 12px;
   }
 }
 @media (max-width: 798px) {
@@ -874,6 +885,17 @@ img {
 .calc__info a {
   display: flex;
   align-items: center;
+  color: #333333;
+  font-size: 14px;
+}
+.calc__info a:hover {
+  text-decoration-line: underline;
+  color: #f15d22;
+}
+@media (max-width: 1022px) {
+  .calc__info a {
+    font-size: 12px;
+  }
 }
 .calc__send {
   display: inline-block;
@@ -885,4 +907,36 @@ img {
   /* identical to box height, or 329% */
   text-align: center;
   text-transform: uppercase;
+}
+.feachers {
+  padding: 20px 0;
+  display: flex;
+}
+.feachers__bg {
+  padding: 60px 360px 160px 40px;
+}
+.feachers__text {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #f1f2f3;
+}
+.feachers__block {
+  padding: 0 20px 0 30px;
+}
+.feachers__block h2 {
+  display: inline-block;
+  padding: 10px 0 20px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  border-top: 1px solid #f1f2f3;
+}
+
+.menu a {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+  color: #f15d22;
+  padding: 11px 0 9px;
 }
