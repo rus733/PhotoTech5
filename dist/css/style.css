@@ -524,6 +524,35 @@ img {
   object-fit: cover;
 }
 
+.title {
+  margin: 0;
+  color: #333333;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  /* identical to box height, or 133% */
+}
+@media (max-width: 798px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
+.title-02 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  /* identical to box height, or 125% */
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+@media (max-width: 798px) {
+  .title-02 {
+    font-size: 20px;
+  }
+}
+
 .header {
   border-bottom: 1px solid #333333;
   padding-top: 7px;
@@ -781,9 +810,22 @@ img {
 .info {
   padding: 23px 0 80px;
 }
+.info-title {
+  padding: 20px 0 50px;
+}
+@media (max-width: 798px) {
+  .info-title {
+    padding: 10px 0 20px;
+  }
+}
 
 .breadcrumb {
   padding-bottom: 20px;
+}
+@media (max-width: 798px) {
+  .breadcrumb {
+    padding-bottom: 10px;
+  }
 }
 .breadcrumb ul {
   display: flex;
@@ -801,7 +843,7 @@ img {
 .breadcrumb__item a {
   text-decoration-line: none;
   color: #666666;
-  font-size: 12px;
+  font-size: 14px;
 }
 .breadcrumb__item a:hover {
   text-decoration-line: underline;
@@ -820,21 +862,6 @@ img {
 @media (max-width: 798px) {
   .breadcrumb__item a {
     font-size: 12px;
-  }
-}
-
-.title {
-  margin: 0;
-  padding: 20px 0 50px;
-  color: #333333;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 40px;
-  /* identical to box height, or 133% */
-}
-@media (max-width: 798px) {
-  .title {
-    font-size: 25px;
   }
 }
 
@@ -961,6 +988,7 @@ img {
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #f1f2f3;
+  color: #666666;
 }
 .feachers__block {
   width: 37%;
@@ -985,6 +1013,12 @@ img {
   line-height: 23px;
   border-top: 2px solid #f1f2f3;
 }
+@media (max-width: 606px) {
+  .feachers__block h2 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+}
 
 .menu ul li {
   display: block;
@@ -995,10 +1029,70 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height, or 150% */
   color: #f15d22;
   padding: 11px 0 9px;
 }
 .menu__link:hover {
   color: #333333;
+}
+
+.about-bg {
+  background: #f1f2f3;
+  padding: 80px 40px;
+}
+@media (max-width: 1022px) {
+  .about-bg {
+    padding: 40px 0;
+  }
+}
+
+.about {
+  display: flex;
+  padding: 40px;
+  background: #ffffff;
+}
+@media (max-width: 1022px) {
+  .about {
+    flex-direction: column;
+  }
+}
+@media (max-width: 606px) {
+  .about {
+    padding: 30px 40px;
+  }
+}
+.about-info {
+  width: 48%;
+  padding: 50px 0;
+  margin-right: 40px;
+}
+@media (max-width: 1022px) {
+  .about-info {
+    width: 100%;
+    padding: 0 0 30px 0;
+    margin-right: 0;
+  }
+}
+.about-info__title {
+  margin-bottom: 20px;
+  text-align: left;
+  color: #f15d22;
+}
+@media (max-width: 606px) {
+  .about-info__title {
+    margin-bottom: 10px;
+  }
+}
+.about-info__text {
+  font-size: 14px;
+  line-height: 21px;
+  /* or 150% */
+}
+.about-img {
+  width: 48%;
+}
+@media (max-width: 1022px) {
+  .about-img {
+    width: 100%;
+  }
 }
