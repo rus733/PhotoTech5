@@ -52,13 +52,14 @@
   }
 }
 .calc {
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: $pt-light-grey-bg;
   @media (max-width: 798px) {
     flex-direction: column;
+    padding: 20px 20px 20px 20px;
   }
   &__wrap {
     display: flex;
@@ -131,15 +132,45 @@
 .feachers {
   padding: 20px 0;
   display: flex;
+  @media (max-width: 1022px) {
+    flex-direction: column;
+  }
+
   &__bg {
-    padding: 60px 360px 160px 40px;
+    padding: 60px 200px 160px 40px;
+    width: 63%;
+    @media (max-width: 1230px) {
+      width: 55%;
+      padding: 60px 100px 160px 40px;
+    }
+    @media (max-width: 1022px) {
+      width: 100%;
+    }
+    @media (max-width: 798px) {
+      padding: 80px;
+    }
+    @media (max-width: 606px) {
+      padding: 25px;
+    }
   }
   &__text {
+    padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     border: 1px solid #f1f2f3;
   }
   &__block {
+    width: 37%;
     padding: 0 20px 0 30px;
+
+    @media (max-width: 1230px) {
+      width: 45%;
+    }
+    @media (max-width: 1022px) {
+      width: 100%;
+      padding: 0 30px;
+    }
+    @media (max-width: 798px) {
+    }
 
     & h2 {
       display: inline-block;
@@ -147,20 +178,28 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 23px;
-      border-top: 1px solid $pt-light-grey-bg;
+      border-top: 2px solid $pt-light-grey-bg;
     }
   }
 }
 
 .menu {
-  & a {
+  & ul li {
+    display: block;
+    border-top: 2px solid $pt-light-grey-bg;
+  }
+
+  &__link {
     display: inline-block;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     /* identical to box height, or 150% */
-
-    color: #f15d22;
+    color: $pt-orange;
     padding: 11px 0 9px;
+    &:hover {
+      // text-decoration-line: underline;
+      color: $pt-dark-txt-grey333;
+    }
   }
 }

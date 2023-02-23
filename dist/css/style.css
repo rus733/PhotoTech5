@@ -839,7 +839,7 @@ img {
 }
 
 .calc {
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -848,6 +848,7 @@ img {
 @media (max-width: 798px) {
   .calc {
     flex-direction: column;
+    padding: 20px 20px 20px 20px;
   }
 }
 .calc__wrap {
@@ -926,15 +927,55 @@ img {
   padding: 20px 0;
   display: flex;
 }
+@media (max-width: 1022px) {
+  .feachers {
+    flex-direction: column;
+  }
+}
 .feachers__bg {
-  padding: 60px 360px 160px 40px;
+  padding: 60px 200px 160px 40px;
+  width: 63%;
+}
+@media (max-width: 1230px) {
+  .feachers__bg {
+    width: 55%;
+    padding: 60px 100px 160px 40px;
+  }
+}
+@media (max-width: 1022px) {
+  .feachers__bg {
+    width: 100%;
+  }
+}
+@media (max-width: 798px) {
+  .feachers__bg {
+    padding: 80px;
+  }
+}
+@media (max-width: 606px) {
+  .feachers__bg {
+    padding: 25px;
+  }
 }
 .feachers__text {
+  padding: 20px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #f1f2f3;
 }
 .feachers__block {
+  width: 37%;
   padding: 0 20px 0 30px;
+}
+@media (max-width: 1230px) {
+  .feachers__block {
+    width: 45%;
+  }
+}
+@media (max-width: 1022px) {
+  .feachers__block {
+    width: 100%;
+    padding: 0 30px;
+  }
 }
 .feachers__block h2 {
   display: inline-block;
@@ -942,10 +983,14 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  border-top: 1px solid #f1f2f3;
+  border-top: 2px solid #f1f2f3;
 }
 
-.menu a {
+.menu ul li {
+  display: block;
+  border-top: 2px solid #f1f2f3;
+}
+.menu__link {
   display: inline-block;
   font-weight: 400;
   font-size: 14px;
@@ -953,4 +998,7 @@ img {
   /* identical to box height, or 150% */
   color: #f15d22;
   padding: 11px 0 9px;
+}
+.menu__link:hover {
+  color: #333333;
 }
