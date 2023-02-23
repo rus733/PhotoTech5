@@ -250,3 +250,43 @@
     }
   }
 }
+// ******************************************
+.sphere {
+  padding: 80px 0;
+  &-title {
+    margin-bottom: 20px;
+  }
+  &-info {
+    display: flex;
+    padding: 20px 0;
+    &__text {
+      width: 45%;
+    }
+  }
+  &-left {
+    width: 51%;
+    margin-right: 50px;
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__list {
+      & :not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: flex-start;
+
+      & img {
+        width: 10px;
+        margin-right: 5px;
+      }
+    }
+  }
+  &-slide {
+    display: flex;
+    padding-top: 20px;
+  }
+}

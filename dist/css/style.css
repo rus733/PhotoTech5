@@ -1096,3 +1096,39 @@ img {
     width: 100%;
   }
 }
+
+.sphere {
+  padding: 80px 0;
+}
+.sphere-title {
+  margin-bottom: 20px;
+}
+.sphere-info {
+  display: flex;
+  padding: 20px 0;
+}
+.sphere-info__text {
+  width: 45%;
+}
+.sphere-left {
+  width: 51%;
+  margin-right: 50px;
+}
+.sphere-left__title {
+  margin-bottom: 30px;
+}
+.sphere-left__list :not(:last-child) {
+  margin-bottom: 15px;
+}
+.sphere-left__link {
+  display: flex;
+  align-items: flex-start;
+}
+.sphere-left__link img {
+  width: 10px;
+  margin-right: 5px;
+}
+.sphere-slide {
+  display: flex;
+  padding-top: 20px;
+}
