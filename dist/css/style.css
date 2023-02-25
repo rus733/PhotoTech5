@@ -1296,22 +1296,23 @@ img {
   }
 }
 .advantages-cards__item {
-  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
   text-align: left;
   background: #ffffff;
   border: 1px solid #f15d22;
   cursor: pointer;
 }
-@media (max-width: 1022px) {
-  .advantages-cards__item {
-    min-height: 175px;
-  }
-}
 .advantages-cards__item img {
-  width: 70px;
-  margin-right: 20px;
+  width: 25%;
+  display: inline-block;
+  margin-right: 30px;
+  object-fit: fill;
 }
-.advantages-cards__item__text {
+.advantages-cards__text {
+  display: inline-block;
+  width: 75%;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
