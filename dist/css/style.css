@@ -1319,3 +1319,66 @@ img {
   /* or 150% */
   text-align: left;
 }
+
+.consult-bg {
+  background: #f1f2f3;
+  padding: 80px 0;
+}
+@media (max-width: 1022px) {
+  .consult-bg {
+    padding: 40px 0;
+  }
+}
+
+.consult {
+  display: flex;
+  padding-bottom: 30px;
+  background: #ffffff;
+}
+@media (max-width: 1022px) {
+  .consult {
+    flex-direction: column;
+  }
+}
+@media (max-width: 606px) {
+  .consult {
+    padding: 30px 40px;
+  }
+}
+.consult-info {
+  width: 65%;
+  padding: 55px 0 20px 40px;
+}
+@media (max-width: 1022px) {
+  .consult-info {
+    width: 100%;
+    padding: 0 0 30px 0;
+    margin-right: 0;
+  }
+}
+.consult-info__title {
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333333;
+}
+@media (max-width: 606px) {
+  .consult-info__title {
+    margin-bottom: 10px;
+  }
+}
+.consult-info__text {
+  font-size: 14px;
+  line-height: 21px;
+  /* or 150% */
+}
+.consult-img {
+  width: 35%;
+}
+@media (max-width: 1022px) {
+  .consult-img {
+    width: 100%;
+  }
+}
+.consult-form {
+  padding: 50px;
+}

@@ -473,3 +473,56 @@
     }
   }
 }
+// consult ********************************
+
+.consult-bg {
+  background: $pt-light-grey-bg;
+  padding: 80px 0;
+  @media (max-width: 1022px) {
+    padding: 40px 0;
+  }
+}
+.consult {
+  display: flex;
+  padding-bottom: 30px;
+  background: $pt-white;
+  @media (max-width: 1022px) {
+    flex-direction: column;
+  }
+  @media (max-width: 606px) {
+    padding: 30px 40px;
+  }
+  &-info {
+    width: 65%;
+    padding: 55px 0 20px 40px;
+    // margin-left: 40px;
+    @media (max-width: 1022px) {
+      width: 100%;
+      padding: 0 0 30px 0;
+      margin-right: 0;
+    }
+    &__title {
+      margin-bottom: 20px;
+      text-align: left;
+      color: $pt-dark-txt-grey333;
+      @media (max-width: 606px) {
+        margin-bottom: 10px;
+      }
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 21px;
+      /* or 150% */
+    }
+  }
+  &-img {
+    width: 35%;
+
+    @media (max-width: 1022px) {
+      width: 100%;
+    }
+  }
+  &-form {
+    padding: 50px;
+  }
+}
