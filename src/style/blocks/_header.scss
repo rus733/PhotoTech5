@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 20px;
     color: $pt-txt-grey666;
     &__left {
@@ -40,7 +40,7 @@
         align-items: center;
         gap: 6px;
         & a {
-          text-decoration-line: underline;
+          text-decoration-line: none;
           color: $pt-dark-txt-grey333;
           font-size: 18px;
           line-height: 27px;
@@ -51,6 +51,7 @@
         }
         & a:hover {
           color: $pt-orange;
+          text-decoration-line: underline;
         }
       }
       & img {
@@ -95,7 +96,7 @@
       }
     }
     &__link {
-      font-size: 12px;
+      font-size: 13px;
       line-height: 20px;
       /* identical to box height, or 162% */
       text-decoration-line: none;

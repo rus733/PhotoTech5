@@ -570,7 +570,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   color: #666666;
 }
@@ -601,7 +601,7 @@ img {
   gap: 6px;
 }
 .header-top__phones div a {
-  text-decoration-line: underline;
+  text-decoration-line: none;
   color: #333333;
   font-size: 18px;
   line-height: 27px;
@@ -614,6 +614,7 @@ img {
 }
 .header-top__phones div a:hover {
   color: #f15d22;
+  text-decoration-line: underline;
 }
 .header-top__phones img {
   width: 12px;
@@ -651,7 +652,7 @@ img {
   }
 }
 .header-nav__link {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 20px;
   /* identical to box height, or 162% */
   text-decoration-line: none;
@@ -1160,7 +1161,7 @@ img {
 }
 .sphere-left__link {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   text-decoration-line: none;
   color: #333333;
   font-size: 14px;
@@ -1277,6 +1278,11 @@ img {
   /* or 150% */
   text-align: center;
   margin-bottom: 40px;
+}
+@media (max-width: 1230px) {
+  .advantages__text {
+    padding: 0;
+  }
 }
 .advantages-cards {
   display: grid;
