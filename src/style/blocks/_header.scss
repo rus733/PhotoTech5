@@ -1,8 +1,9 @@
 .header {
   border-bottom: 1px solid $pt-dark-txt-grey333;
-  padding-top: 7px;
+  // padding-top: 7px;
   &-bg-top {
     display: flex;
+    padding: 6px 0;
     background: $pt-light-grey-bg;
     @media (max-width: 1022px) {
       display: none;
@@ -16,16 +17,20 @@
     line-height: 20px;
     color: $pt-txt-grey666;
     &__left {
-      width: 38%;
+      width: 45%;
       @media (max-width: 1230px) {
         width: 30%;
       }
     }
     &__right {
+      width: 55%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       gap: 20px;
+      @media (max-width: 1230px) {
+        width: 70%;
+      }
     }
     &__city a {
       text-decoration: none;
@@ -64,8 +69,6 @@
     }
     &__free {
       width: 47px;
-      margin-left: 20px;
-      margin-right: 23px;
       color: $free-fill;
       font-size: 10px;
       line-height: 15px;
@@ -86,6 +89,7 @@
   &-nav {
     &__list {
       display: inline-flex;
+      justify-content: flex-start;
       flex-wrap: wrap;
       vertical-align: middle;
       padding: 0;
