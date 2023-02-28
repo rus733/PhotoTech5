@@ -313,25 +313,10 @@
         color: $pt-orange;
       }
 
-      & img {
-        // width: 10px;
-        // margin-right: 5px;
-      }
-
-      // &::before {
-      //   content: '';
-      //   position: absolute;
-      //   width: 10px;
-      //   height: 10px;
-      //   background-color: $pt-orange;
-      //   border-radius: 50%;
-      //   margin-right: 10px;
-      //   top: 1.5px;
-      //   left: -15px;
-      // }
       &::before {
         content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M10 5C10 2.24325 7.75675 0 5 0C2.24325 0 0 2.24325 0 5C0 7.75725 2.24325 10 5 10C7.75675 10 10 7.75725 10 5ZM3.575 7.7715C3.39175 7.61625 3.2965 7.394 3.296 7.171C3.296 6.99025 3.35675 6.80925 3.4825 6.66075L4.88925 4.99925L3.4775 3.342C3.1945 3.0105 3.2345 2.51375 3.566 2.23075C3.8975 1.9485 4.39475 1.988 4.67725 2.31925L6.52425 4.48575C6.77425 4.78 6.77525 5.21175 6.52575 5.50625L4.687 7.6795C4.40475 8.01175 3.90725 8.05275 3.575 7.7715Z' fill='%23F15D22' /></svg>");
         display: inline-block;
+        // vertical-align: middle;
         width: 15px;
         height: 15px;
         position: absolute;
@@ -371,8 +356,6 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  // justify-content: center;
-  // flex-wrap: wrap;
   gap: 20px;
   @media (max-width: 1022px) {
     grid-template-columns: repeat(2, 1fr);
@@ -455,27 +438,16 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 30px;
     }
-    &__img {
-      // width: 25%;
-      // display: inline-block;
-      // margin-right: 30px;
-    }
     &__item {
       display: flex;
       align-items: center;
       padding: 20px;
-      // min-height: 201px;
       text-align: left;
       background: $pt-white;
       border: 1px solid $pt-orange;
       cursor: pointer;
-      @media (max-width: 1022px) {
-        // min-height: 175px;
-      }
       & img {
         width: 25%;
-        // height: 50%;
-        // max-width: 70px;
         display: inline-block;
         margin-right: 30px;
         object-fit: fill;
@@ -505,6 +477,7 @@
   display: flex;
   padding-bottom: 30px;
   background: $pt-white;
+  border-bottom: 2px solid $pt-light-grey-bg;
   @media (max-width: 1022px) {
     flex-direction: column;
   }
@@ -514,11 +487,13 @@
   &-info {
     width: 65%;
     padding: 55px 0 20px 40px;
-    // margin-left: 40px;
     @media (max-width: 1022px) {
       width: 100%;
-      padding: 0 0 30px 0;
+      padding: 20px 30px 0;
       margin-right: 0;
+    }
+    @media (max-width: 606px) {
+      padding: 20px 0 0;
     }
     &__title {
       margin-bottom: 20px;
@@ -542,6 +517,83 @@
     }
   }
   &-form {
-    padding: 50px;
+    background: $pt-white;
+    padding: 50px 40px 35px;
+    &__get {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 1022px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 922px) {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+    &__name {
+      outline-style: none !important;
+      border: 1px solid $pt-txt-grey666;
+      padding: 17px 50px;
+      vertical-align: middle;
+      -webkit-border-radius: 1px;
+      border-radius: 1px;
+      width: calc(33% - 0px);
+      @media (max-width: 1022px) {
+        width: calc(50% - 20px);
+      }
+      @media (max-width: 922px) {
+        width: 50%;
+      }
+      @media (max-width: 798px) {
+        width: 100%;
+      }
+    }
+    &__phone {
+      outline-style: none !important;
+      border: 1px solid $pt-txt-grey666;
+      padding: 17px 50px;
+      vertical-align: middle;
+      -webkit-border-radius: 1px;
+      border-radius: 1px;
+      width: calc(33% - 0px);
+      @media (max-width: 1022px) {
+        width: calc(50% - 20px);
+      }
+      @media (max-width: 922px) {
+        width: 50%;
+      }
+      @media (max-width: 798px) {
+        width: 100%;
+      }
+    }
+    &__phone ::before {
+      // content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M10 5C10 2.24325 7.75675 0 5 0C2.24325 0 0 2.24325 0 5C0 7.75725 2.24325 10 5 10C7.75675 10 10 7.75725 10 5ZM3.575 7.7715C3.39175 7.61625 3.2965 7.394 3.296 7.171C3.296 6.99025 3.35675 6.80925 3.4825 6.66075L4.88925 4.99925L3.4775 3.342C3.1945 3.0105 3.2345 2.51375 3.566 2.23075C3.8975 1.9485 4.39475 1.988 4.67725 2.31925L6.52425 4.48575C6.77425 4.78 6.77525 5.21175 6.52575 5.50625L4.687 7.6795C4.40475 8.01175 3.90725 8.05275 3.575 7.7715Z' fill='%23F15D22' /></svg>");
+      content: '***';
+      display: inline-block;
+      // vertical-align: middle;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 2px;
+      left: -15px;
+    }
+
+    &__button {
+      padding: 17px 35px;
+      font-size: 13px;
+      @media (max-width: 1022px) {
+        width: 50%;
+
+        margin: 30px auto 0 auto;
+      }
+      @media (max-width: 922px) {
+        margin: 0 auto;
+      }
+      @media (max-width: 798px) {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
   }
 }

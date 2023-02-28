@@ -1354,6 +1354,7 @@ img {
   display: flex;
   padding-bottom: 30px;
   background: #ffffff;
+  border-bottom: 2px solid #f1f2f3;
 }
 @media (max-width: 1022px) {
   .consult {
@@ -1372,8 +1373,13 @@ img {
 @media (max-width: 1022px) {
   .consult-info {
     width: 100%;
-    padding: 0 0 30px 0;
+    padding: 20px 30px 0;
     margin-right: 0;
+  }
+}
+@media (max-width: 606px) {
+  .consult-info {
+    padding: 20px 0 0;
   }
 }
 .consult-info__title {
@@ -1400,5 +1406,100 @@ img {
   }
 }
 .consult-form {
-  padding: 50px;
+  background: #ffffff;
+  padding: 50px 40px 35px;
+}
+.consult-form__get {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1022px) {
+  .consult-form__get {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 922px) {
+  .consult-form__get {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+.consult-form__name {
+  outline-style: none !important;
+  border: 1px solid #666666;
+  padding: 17px 50px;
+  vertical-align: middle;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  width: calc(33% - 0px);
+}
+@media (max-width: 1022px) {
+  .consult-form__name {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 922px) {
+  .consult-form__name {
+    width: 50%;
+  }
+}
+@media (max-width: 798px) {
+  .consult-form__name {
+    width: 100%;
+  }
+}
+.consult-form__phone {
+  outline-style: none !important;
+  border: 1px solid #666666;
+  padding: 17px 50px;
+  vertical-align: middle;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  width: calc(33% - 0px);
+}
+@media (max-width: 1022px) {
+  .consult-form__phone {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 922px) {
+  .consult-form__phone {
+    width: 50%;
+  }
+}
+@media (max-width: 798px) {
+  .consult-form__phone {
+    width: 100%;
+  }
+}
+.consult-form__phone ::before {
+  content: "***";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  left: -15px;
+}
+.consult-form__button {
+  padding: 17px 35px;
+  font-size: 13px;
+}
+@media (max-width: 1022px) {
+  .consult-form__button {
+    width: 50%;
+    margin: 30px auto 0 auto;
+  }
+}
+@media (max-width: 922px) {
+  .consult-form__button {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 798px) {
+  .consult-form__button {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
