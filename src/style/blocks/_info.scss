@@ -24,7 +24,7 @@
   &__item:not(:last-child)::after {
     display: inline-block;
     margin: 0 0.25rem;
-    content: "/";
+    content: '/';
   }
 
   &__item a {
@@ -512,6 +512,9 @@
   @media (max-width: 1022px) {
     flex-direction: column;
   }
+  @media (max-width: 992px) {
+    border-bottom: 2px solid $pt-white;
+  }
   @media (max-width: 606px) {
     // padding: 30px 15px;
     padding: 0px 0;
@@ -572,6 +575,9 @@
         flex-direction: column;
         row-gap: 20px;
       }
+      @media (max-width: 576px) {
+        margin-bottom: 20px;
+      }
     }
     &__name {
       outline-style: none !important;
@@ -581,6 +587,8 @@
       -webkit-border-radius: 1px;
       border-radius: 1px;
       width: calc(33% - 0px);
+      background-image: url(img/info/consult/phone.png);
+      // ***********************************************************************
       @media (max-width: 1022px) {
         width: calc(50% - 20px);
       }
@@ -591,7 +599,30 @@
       @media (max-width: 798px) {
         width: 100%;
       }
+      &-div {
+        position: relative;
+        // &:before {
+        //   content: '';
+        //   position: absolute;
+        //   top: 0;
+        //   bottom: 0;
+        //   left: 15px;
+        //   margin: auto 0;
+        //   width: 25px;
+        //   height: 25px;
+        //   background: url('https://cdn0.iconfinder.com/data/icons/ThemeShock-credit-cards-icons/64/mastercard.png') no-repeat;
+        //   background-size: cover;
+      }
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+      }
     }
+
     &__phone {
       outline-style: none !important;
       border: 1px solid $pt-txt-grey666;
@@ -611,17 +642,17 @@
         width: 100%;
       }
     }
-    &__phone ::before {
-      // content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M10 5C10 2.24325 7.75675 0 5 0C2.24325 0 0 2.24325 0 5C0 7.75725 2.24325 10 5 10C7.75675 10 10 7.75725 10 5ZM3.575 7.7715C3.39175 7.61625 3.2965 7.394 3.296 7.171C3.296 6.99025 3.35675 6.80925 3.4825 6.66075L4.88925 4.99925L3.4775 3.342C3.1945 3.0105 3.2345 2.51375 3.566 2.23075C3.8975 1.9485 4.39475 1.988 4.67725 2.31925L6.52425 4.48575C6.77425 4.78 6.77525 5.21175 6.52575 5.50625L4.687 7.6795C4.40475 8.01175 3.90725 8.05275 3.575 7.7715Z' fill='%23F15D22' /></svg>");
-      content: "***";
-      display: inline-block;
-      // vertical-align: middle;
-      width: 15px;
-      height: 15px;
-      position: absolute;
-      top: 2px;
-      left: -15px;
-    }
+    // &__phone ::before {
+    //   // content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='24' width='24'><path d='M10 5C10 2.24325 7.75675 0 5 0C2.24325 0 0 2.24325 0 5C0 7.75725 2.24325 10 5 10C7.75675 10 10 7.75725 10 5ZM3.575 7.7715C3.39175 7.61625 3.2965 7.394 3.296 7.171C3.296 6.99025 3.35675 6.80925 3.4825 6.66075L4.88925 4.99925L3.4775 3.342C3.1945 3.0105 3.2345 2.51375 3.566 2.23075C3.8975 1.9485 4.39475 1.988 4.67725 2.31925L6.52425 4.48575C6.77425 4.78 6.77525 5.21175 6.52575 5.50625L4.687 7.6795C4.40475 8.01175 3.90725 8.05275 3.575 7.7715Z' fill='%23F15D22' /></svg>");
+    //   content: '***';
+    //   display: inline-block;
+    //   // vertical-align: middle;
+    //   width: 15px;
+    //   height: 15px;
+    //   position: absolute;
+    //   top: 2px;
+    //   left: -15px;
+    // }
 
     &__button {
       padding: 17px 35px;
@@ -657,6 +688,10 @@
     // flex-direction: column;
     margin-top: 20px;
   }
+  @media (max-width: 576px) {
+    // flex-direction: column;
+    margin-top: 0px;
+  }
   &__file {
     // width: 63%;
     @media (max-width: 992px) {
@@ -665,6 +700,9 @@
     }
     @media (max-width: 798px) {
       width: 100%;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 0;
     }
     & a {
       display: flex;
@@ -703,6 +741,9 @@
     }
     @media (max-width: 798px) {
       width: 100%;
+    }
+    @media (max-width: 576px) {
+      display: none;
     }
     & a {
       color: $pt-orange;
